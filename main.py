@@ -223,7 +223,7 @@ def send_start_message(chat_id: int):
 
     # ========= زر ميني-آب لفتح المتنبئ =========
     webapp = types.WebAppInfo(
-        url="https://telegram.org/tos/mini-apps"  # ضع هنا رابط الميني أب الخاص بك
+        url="https://t.me/PREDBOX2ROBOT"  # ضع هنا رابط الميني أب الخاص بك
     )
     btn_open = types.InlineKeyboardButton(
         text=get_text("btn_open", lang),
