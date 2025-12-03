@@ -172,10 +172,17 @@ def send_start_message(chat_id: int):
     text = main_message(lang)
 
     markup = types.InlineKeyboardMarkup()
+
+    # ========= زر ميني-آب لفتح المتنبئ =========
+    webapp = types.WebAppInfo(
+        url="https://your-miniapp-url.com"  # ضع هنا رابط الميني أب الخاص بك
+    )
     btn_open = types.InlineKeyboardButton(
         text=get_text("btn_open", lang),
-        callback_data="open_predictor"
+        web_app=webapp
     )
+    # ===========================================
+
     btn_change = types.InlineKeyboardButton(
         text=get_text("btn_change_lang", lang),
         callback_data="change_language"
@@ -228,6 +235,7 @@ def on_callback(call: telebot.types.CallbackQuery):
     data = call.data
 
     if data == "open_predictor":
+        # هذا الفرع لن يُستَخدم الآن لأن زر فتح المتنبئ أصبح WebApp
         bot.answer_callback_query(call.id)
         send_fake_window(chat_id, lang, seconds=5)
         return
