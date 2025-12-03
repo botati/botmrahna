@@ -16,6 +16,8 @@ FRENCH_VIDEO_LINK  = "https://t.me/YourFrenchChannel"   # فيديو النسخ�
 ENGLISH_VIDEO_LINK = "https://t.me/YourEnglishChannel"  # فيديو النسخة الإنجليزية
 ARABIC_VIDEO_LINK  = "https://t.me/YourArabicChannel"   # فيديو النسخة العربية
 
+# ================= نصوص ثابتة =================
+
 TEXTS = {
     "btn_open": {
         "ar": "فتح المتنبئ",
@@ -56,7 +58,6 @@ LANG_SELECT_TEXT = (
     "🇸🇦 من فضلك، اختر اللغة المفضلة لديك بالضغط على الزر..."
 )
 
-
 # ================= دوال مساعدة =================
 
 def get_lang(chat_id: int) -> str:
@@ -73,7 +74,10 @@ def get_text(key: str, lang: str) -> str:
 
 
 def main_message(lang: str) -> str:
-    """رسالة ستارت؛ نسخة العربية مطابقة تقريبًا للصورة مع الاقتباسات."""
+    """
+    رسالة ستارت كاملة بنفس الشكل لكل لغة:
+    عنوان، اقتباس مقدمة، 1/2/3/4، روابط، أسطر فيديو، خاتمة داخل اقتباس.
+    """
     if lang == "ar":
         return (
             "<b>اقرأ بشكل إلزامي 🔴</b>\n\n"
@@ -81,8 +85,8 @@ def main_message(lang: str) -> str:
             "للحصول على موثوقية تصل إلى 99٪ يرجى اتباع هذه الخطوات دون استثناء:</blockquote>\n\n"
             "PREDICTOR SIGNO-BOX\n\n"
             "١️⃣ استخدم الرمز الترويجي:\n"
-            "<code>PRED BOX 2 ROBOT</code>\n\n"
-            "٢️⃣ فعِّل مكافأة CASINO+GAMME عند التسجيل\n\n"
+            "<code>PREDBOX2ROBOT</code>\n\n"
+            "٢️⃣ فعِّل مكافأة CASINO+GAMME عند التسجيل.\n\n"
             "٣️⃣ سجِّل فقط عبر هذا الرابط 👇\n"
             "https://mlbt.cc 👉 <b>/PREDBOX2ROBOT (MELBET)</b>\n\n"
             f"<blockquote>🇫🇷 <a href=\"{FRENCH_VIDEO_LINK}\">فيديو النسخة الفرنسية</a></blockquote>\n"
@@ -96,33 +100,70 @@ def main_message(lang: str) -> str:
             "<blockquote>▶️ اتّبع التعليمات = تحصل على أفضل التوقعات.</blockquote>"
         )
 
-    # باقي اللغات تنسيق أبسط؛ تعدّلها لو حابب
     if lang == "en":
         return (
-            "<b>Read this carefully 🔴</b>\n\n"
-            "Dear user,\n"
-            "To reach up to 99% accuracy, follow all steps exactly.\n\n"
-            "1) Use promo code: <code>PREDBOX2ROBOT</code>\n"
-            "2) Activate CASINO+GAMME bonus during registration\n"
-            "3) Register only via our official links\n\n"
-            f"🇫🇷 <a href=\"{FRENCH_VIDEO_LINK}\">French version video</a>\n"
-            f"🇬🇧 <a href=\"{ENGLISH_VIDEO_LINK}\">English version video</a>\n"
-            f"🇸🇦 <a href=\"{ARABIC_VIDEO_LINK}\">Arabic version video</a>\n"
+            "<b>Read carefully 🔴</b>\n\n"
+            "<blockquote>Dear user,\n"
+            "To reach reliability up to 99%, please follow these steps without exception:</blockquote>\n\n"
+            "PREDICTOR SIGNO-BOX\n\n"
+            "1️⃣ Use the promo code:\n"
+            "<code>PREDBOX2ROBOT</code>\n\n"
+            "2️⃣ Activate the CASINO+GAMME bonus during registration.\n\n"
+            "3️⃣ Register only through this link 👇\n"
+            "https://mlbt.cc 👉 <b>/PREDBOX2ROBOT (MELBET)</b>\n\n"
+            f"<blockquote>🇫🇷 <a href=\"{FRENCH_VIDEO_LINK}\">French version video</a></blockquote>\n"
+            f"<blockquote>🇬🇧 <a href=\"{ENGLISH_VIDEO_LINK}\">English version video</a></blockquote>\n\n"
+            "4️⃣ Register only through this link 👇\n"
+            "http://bit.ly/48PtwTk 👉 <b>(1XCASINO)</b>\n\n"
+            f"<blockquote>🇫🇷 <a href=\"{FRENCH_VIDEO_LINK}\">French version video</a></blockquote>\n"
+            f"<blockquote>🇸🇦 <a href=\"{ARABIC_VIDEO_LINK}\">Arabic version video</a></blockquote>\n\n"
+            "<blockquote>These steps allow correct synchronization with our algorithms; "
+            "without them, the results will be partial and accuracy cannot be guaranteed.</blockquote>\n\n"
+            "<blockquote>▶️ Follow the instructions = get the best predictions.</blockquote>"
         )
 
     if lang == "fr":
         return (
-            "<b>Lisez ceci attentivement 🔴</b>\n\n"
-            "1) Code promo : <code>PREDBOX2ROBOT</code>\n"
-            "2) Activez le bonus CASINO+GAMME\n"
-            f"🇫🇷 <a href=\"{FRENCH_VIDEO_LINK}\">Vidéo version française</a>\n"
+            "<b>À lire obligatoirement 🔴</b>\n\n"
+            "<blockquote>Cher utilisateur,\n"
+            "Pour obtenir une fiabilité allant jusqu’à 99 %, veuillez suivre ces étapes sans exception :</blockquote>\n\n"
+            "PREDICTOR SIGNO-BOX\n\n"
+            "1️⃣ Utilisez le code promo :\n"
+            "<code>PREDBOX2ROBOT</code>\n\n"
+            "2️⃣ Activez le bonus CASINO+GAMME lors de l’inscription.\n\n"
+            "3️⃣ Inscrivez-vous uniquement via ce lien 👇\n"
+            "https://mlbt.cc 👉 <b>/PREDBOX2ROBOT (MELBET)</b>\n\n"
+            f"<blockquote>🇫🇷 <a href=\"{FRENCH_VIDEO_LINK}\">Vidéo version française</a></blockquote>\n"
+            f"<blockquote>🇬🇧 <a href=\"{ENGLISH_VIDEO_LINK}\">Vidéo version anglaise</a></blockquote>\n\n"
+            "4️⃣ Inscrivez-vous uniquement via ce lien 👇\n"
+            "http://bit.ly/48PtwTk 👉 <b>(1XCASINO)</b>\n\n"
+            f"<blockquote>🇫🇷 <a href=\"{FRENCH_VIDEO_LINK}\">Vidéo version française</a></blockquote>\n"
+            f"<blockquote>🇸🇦 <a href=\"{ARABIC_VIDEO_LINK}\">Vidéo version arabe</a></blockquote>\n\n"
+            "<blockquote>Ces étapes permettent une bonne synchronisation avec nos algorithmes ; "
+            "sans elles, les résultats seront partiels et la précision ne peut pas être garantie.</blockquote>\n\n"
+            "<blockquote>▶️ Suivez les instructions = obtenez les meilleures prédictions.</blockquote>"
         )
 
     if lang == "ru":
         return (
-            "<b>Внимательно прочитайте 🔴</b>\n\n"
-            "1) Промокод: <code>PREDBOX2ROBOT</code>\n"
-            f"🇷🇺 <a href=\"{ENGLISH_VIDEO_LINK}\">Видео на английском</a>\n"
+            "<b>Обязательно к прочтению 🔴</b>\n\n"
+            "<blockquote>Уважаемый пользователь,\n"
+            "Чтобы достичь надежности до 99 %, выполните следующие шаги без исключений:</blockquote>\n\n"
+            "PREDICTOR SIGNO-BOX\n\n"
+            "1️⃣ Используйте промокод:\n"
+            "<code>PREDBOX2ROBOT</code>\n\n"
+            "2️⃣ Активируйте бонус CASINO+GAMME при регистрации.\n\n"
+            "3️⃣ Регистрируйтесь только по этой ссылке 👇\n"
+            "https://mlbt.cc 👉 <b>/PREDBOX2ROBOT (MELBET)</b>\n\n"
+            f"<blockquote>🇫🇷 <a href=\"{FRENCH_VIDEO_LINK}\">Видео французской версии</a></blockquote>\n"
+            f"<blockquote>🇬🇧 <a href=\"{ENGLISH_VIDEO_LINK}\">Видео английской версии</a></blockquote>\n\n"
+            "4️⃣ Регистрируйтесь только по этой ссылке 👇\n"
+            "http://bit.ly/48PtwTk 👉 <b>(1XCASINO)</b>\n\n"
+            f"<blockquote>🇫🇷 <a href=\"{FRENCH_VIDEO_LINK}\">Видео французской версии</a></blockquote>\n"
+            f"<blockquote>🇸🇦 <a href=\"{ARABIC_VIDEO_LINK}\">Видео арабской версии</a></blockquote>\n\n"
+            "<blockquote>Эти шаги обеспечивают правильную синхронизацию с нашими алгоритмами; "
+            "без них результаты будут частичными, и точность не может быть гарантирована.</blockquote>\n\n"
+            "<blockquote>▶️ Следуйте инструкциям = получите лучшие прогнозы.</blockquote>"
         )
 
 
@@ -170,7 +211,6 @@ def send_language_menu(chat_id: int):
 
     bot.send_message(chat_id, LANG_SELECT_TEXT, reply_markup=markup)
 
-
 # ================= Handlers =================
 
 @bot.message_handler(commands=['start'])
@@ -211,7 +251,6 @@ def on_text(message: telebot.types.Message):
     chat_id = message.chat.id
     lang = get_lang(chat_id)
     bot.send_message(chat_id, get_text("unknown", lang))
-
 
 # ================= تشغيل البوت =================
 
