@@ -106,7 +106,7 @@ def main_message(lang: str) -> str:
             "@HAH33tito33\n\n"
 
             "<b>لينك قناة التليجرام 👇</b>\n"
-            "https://t.me/+GqKpGbFjOaBjYTQ8\n"
+            "https://t.me/+krbK_xtnPgBkMWNk\n"
         )
 
     if lang == "en":
@@ -141,7 +141,7 @@ def main_message(lang: str) -> str:
             "@HAH33tito33\n\n"
 
             "<b>Telegram channel link 👇</b>\n"
-            "https://t.me/+GqKpGbFjOaBjYTQ8\n"
+            "https://t.me/+krbK_xtnPgBkMWNk\n"
         )
 
     if lang == "fr":
@@ -176,7 +176,7 @@ def main_message(lang: str) -> str:
             "@HAH33tito33\n\n"
 
             "<b>Lien du canal Telegram 👇</b>\n"
-            "https://t.me/+GqKpGbFjOaBjYTQ8\n"
+            "https://t.me/+krbK_xtnPgBkMWNk\n"
         )
 
     if lang == "ru":
@@ -211,7 +211,7 @@ def main_message(lang: str) -> str:
             "@HAH33tito33\n\n"
 
             "<b>Ссылка на Telegram-канал 👇</b>\n"
-            "https://t.me/+GqKpGbFjOaBjYTQ8\n"
+            "https://t.me/+krbK_xtnPgBkMWNk\n"
         )
 
 
@@ -223,7 +223,7 @@ def send_start_message(chat_id: int):
 
     # ========= زر ميني-آب لفتح المتنبئ =========
     webapp = types.WebAppInfo(
-        url="https://t.me/PREDBOX2ROBOT"  # ضع هنا رابط الميني أب الخاص بك
+        url="https://slim.link/Gooo33_REG"  # ضع هنا رابط الميني أب الخاص بك
     )
     btn_open = types.InlineKeyboardButton(
         text=get_text("btn_open", lang),
