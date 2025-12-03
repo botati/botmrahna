@@ -74,96 +74,144 @@ def get_text(key: str, lang: str) -> str:
 
 
 def main_message(lang: str) -> str:
-    """
-    رسالة ستارت كاملة بنفس الشكل لكل لغة:
-    عنوان، اقتباس مقدمة، 1/2/3/4، روابط، أسطر فيديو، خاتمة داخل اقتباس.
-    """
     if lang == "ar":
         return (
             "<b>اقرأ بشكل إلزامي 🔴</b>\n\n"
-            "<blockquote>عزيزي المستخدم،\n"
-            "للحصول على موثوقية تصل إلى 99٪ يرجى اتباع هذه الخطوات دون استثناء:</blockquote>\n\n"
-            "PREDICTOR SIGNO-BOX\n\n"
-            "١️⃣ استخدم الرمز الترويجي:\n"
-            "<code>PREDBOX2ROBOT</code>\n\n"
-            "٢️⃣ فعِّل مكافأة CASINO+GAMME عند التسجيل.\n\n"
-            "٣️⃣ سجِّل فقط عبر هذا الرابط 👇\n"
-            "https://mlbt.cc 👉 <b>/PREDBOX2ROBOT (MELBET)</b>\n\n"
-            f"<blockquote>🇫🇷 <a href=\"{FRENCH_VIDEO_LINK}\">فيديو النسخة الفرنسية</a></blockquote>\n"
-            f"<blockquote>🇬🇧 <a href=\"{ENGLISH_VIDEO_LINK}\">فيديو النسخة الإنجليزية</a></blockquote>\n\n"
-            "٤️⃣ سجِّل فقط عبر هذا الرابط 👇\n"
-            "http://bit.ly/48PtwTk 👉 <b>(1XCASINO)</b>\n\n"
-            f"<blockquote>🇫🇷 <a href=\"{FRENCH_VIDEO_LINK}\">فيديو النسخة الفرنسية</a></blockquote>\n"
-            f"<blockquote>🇸🇦 <a href=\"{ARABIC_VIDEO_LINK}\">فيديو النسخة العربية</a></blockquote>\n\n"
-            "<blockquote>هذه الإجراءات تسمح بالمزامنة الصحيحة مع خوارزمياتنا، "
-            "بدون ذلك ستكون النتائج جزئية ولا يمكن ضمان الدقة.</blockquote>\n\n"
-            "<blockquote>▶️ اتّبع التعليمات = تحصل على أفضل التوقعات.</blockquote>"
+            "<blockquote>سارع بالبدء باللعب الآن مع 💸King of Betting🎰!\n"
+            "🎯 الفرصة أمامك… اضغط وابدأ اللعب الآن!\n\n"
+            "اتبع الخطوات لتشغيل البوت بالطريقة الصحيحة ✅</blockquote>\n\n"
+
+            "١️⃣ تسجل بالبرومو كود:\n"
+            "<code>Gooo33</code>\n\n"
+
+            "٢️⃣ تعمل إيداع 300 ج\n\n"
+
+            "٣️⃣ ابعت سكرين شوت من الإيداع ويكون التسجيل بنفس البروموكود 👈 <b>Gooo33</b>\n\n"
+
+            "<b>المنصة التي ستختارها:</b> 🔽🔽\n\n"
+
+            "<blockquote>رابط التسجيل في جوبيت ❤️\n"
+            "https://promogooo.click/Gooo33</blockquote>\n"
+
+            "<blockquote>رابط التسجيل في لاكي بيري 🟡\n"
+            "https://slim.link/Gooo33_REG</blockquote>\n"
+
+            "<blockquote>رابط التسجيل في باري بلس ⬛️\n"
+            "https://pari-pulse.com/Go3</blockquote>\n"
+
+            "<blockquote>رابط التسجيل في فاست بيري 😍\n"
+            "https://fastpaff.top/L?tag=d_4498338m_105372c_&site=4498338&ad=105372</blockquote>\n\n"
+
+            "<b>ابعت هنا ⬇️📱</b>\n"
+            "@HAH33tito33\n\n"
+
+            "<b>لينك قناة التليجرام 👇</b>\n"
+            "https://t.me/+GqKpGbFjOaBjYTQ8\n"
         )
 
     if lang == "en":
         return (
-            "<b>Read carefully 🔴</b>\n\n"
-            "<blockquote>Dear user,\n"
-            "To reach reliability up to 99%, please follow these steps without exception:</blockquote>\n\n"
-            "PREDICTOR SIGNO-BOX\n\n"
-            "1️⃣ Use the promo code:\n"
-            "<code>PREDBOX2ROBOT</code>\n\n"
-            "2️⃣ Activate the CASINO+GAMME bonus during registration.\n\n"
-            "3️⃣ Register only through this link 👇\n"
-            "https://mlbt.cc 👉 <b>/PREDBOX2ROBOT (MELBET)</b>\n\n"
-            f"<blockquote>🇫🇷 <a href=\"{FRENCH_VIDEO_LINK}\">French version video</a></blockquote>\n"
-            f"<blockquote>🇬🇧 <a href=\"{ENGLISH_VIDEO_LINK}\">English version video</a></blockquote>\n\n"
-            "4️⃣ Register only through this link 👇\n"
-            "http://bit.ly/48PtwTk 👉 <b>(1XCASINO)</b>\n\n"
-            f"<blockquote>🇫🇷 <a href=\"{FRENCH_VIDEO_LINK}\">French version video</a></blockquote>\n"
-            f"<blockquote>🇸🇦 <a href=\"{ARABIC_VIDEO_LINK}\">Arabic version video</a></blockquote>\n\n"
-            "<blockquote>These steps allow correct synchronization with our algorithms; "
-            "without them, the results will be partial and accuracy cannot be guaranteed.</blockquote>\n\n"
-            "<blockquote>▶️ Follow the instructions = get the best predictions.</blockquote>"
+            "<b>Read Carefully 🔴</b>\n\n"
+            "<blockquote>Start playing now with 💸King of Betting🎰!\n"
+            "🎯 Your chance is here… click and start playing now!\n\n"
+            "Follow the steps to activate the bot correctly ✅</blockquote>\n\n"
+
+            "1️⃣ Register using the promo code:\n"
+            "<code>Gooo33</code>\n\n"
+
+            "2️⃣ Make a deposit of 300 EGP\n\n"
+
+            "3️⃣ Send a screenshot of your deposit using the promo code 👈 <b>Gooo33</b>\n\n"
+
+            "<b>Choose your platform:</b> 🔽🔽\n\n"
+
+            "<blockquote>Jupit registration link ❤️\n"
+            "https://promogooo.click/Gooo33</blockquote>\n"
+
+            "<blockquote>LuckyBerry registration 🟡\n"
+            "https://slim.link/Gooo33_REG</blockquote>\n"
+
+            "<blockquote>PariPlus registration ⬛️\n"
+            "https://pari-pulse.com/Go3</blockquote>\n"
+
+            "<blockquote>FastBerry registration 😍\n"
+            "https://fastpaff.top/L?tag=d_4498338m_105372c_&site=4498338&ad=105372</blockquote>\n\n"
+
+            "<b>Send here ⬇️📱</b>\n"
+            "@HAH33tito33\n\n"
+
+            "<b>Telegram channel link 👇</b>\n"
+            "https://t.me/+GqKpGbFjOaBjYTQ8\n"
         )
 
     if lang == "fr":
         return (
-            "<b>À lire obligatoirement 🔴</b>\n\n"
-            "<blockquote>Cher utilisateur,\n"
-            "Pour obtenir une fiabilité allant jusqu’à 99 %, veuillez suivre ces étapes sans exception :</blockquote>\n\n"
-            "PREDICTOR SIGNO-BOX\n\n"
-            "1️⃣ Utilisez le code promo :\n"
-            "<code>PREDBOX2ROBOT</code>\n\n"
-            "2️⃣ Activez le bonus CASINO+GAMME lors de l’inscription.\n\n"
-            "3️⃣ Inscrivez-vous uniquement via ce lien 👇\n"
-            "https://mlbt.cc 👉 <b>/PREDBOX2ROBOT (MELBET)</b>\n\n"
-            f"<blockquote>🇫🇷 <a href=\"{FRENCH_VIDEO_LINK}\">Vidéo version française</a></blockquote>\n"
-            f"<blockquote>🇬🇧 <a href=\"{ENGLISH_VIDEO_LINK}\">Vidéo version anglaise</a></blockquote>\n\n"
-            "4️⃣ Inscrivez-vous uniquement via ce lien 👇\n"
-            "http://bit.ly/48PtwTk 👉 <b>(1XCASINO)</b>\n\n"
-            f"<blockquote>🇫🇷 <a href=\"{FRENCH_VIDEO_LINK}\">Vidéo version française</a></blockquote>\n"
-            f"<blockquote>🇸🇦 <a href=\"{ARABIC_VIDEO_LINK}\">Vidéo version arabe</a></blockquote>\n\n"
-            "<blockquote>Ces étapes permettent une bonne synchronisation avec nos algorithmes ; "
-            "sans elles, les résultats seront partiels et la précision ne peut pas être garantie.</blockquote>\n\n"
-            "<blockquote>▶️ Suivez les instructions = obtenez les meilleures prédictions.</blockquote>"
+            "<b>À lire attentivement 🔴</b>\n\n"
+            "<blockquote>Commencez à jouer maintenant avec 💸King of Betting🎰 !\n"
+            "🎯 Votre chance est ici… cliquez et commencez à jouer maintenant !\n\n"
+            "Suivez les étapes pour activer correctement le bot ✅</blockquote>\n\n"
+
+            "1️⃣ Inscrivez-vous avec le code promo :\n"
+            "<code>Gooo33</code>\n\n"
+
+            "2️⃣ Faites un dépôt de 300 EGP\n\n"
+
+            "3️⃣ Envoyez une capture d’écran de votre dépôt avec le code promo 👈 <b>Gooo33</b>\n\n"
+
+            "<b>Choisissez votre plateforme :</b> 🔽🔽\n\n"
+
+            "<blockquote>Lien d’inscription Jupit ❤️\n"
+            "https://promogooo.click/Gooo33</blockquote>\n"
+
+            "<blockquote>Inscription LuckyBerry 🟡\n"
+            "https://slim.link/Gooo33_REG</blockquote>\n"
+
+            "<blockquote>Inscription PariPlus ⬛️\n"
+            "https://pari-pulse.com/Go3</blockquote>\n"
+
+            "<blockquote>Inscription FastBerry 😍\n"
+            "https://fastpaff.top/L?tag=d_4498338m_105372c_&site=4498338&ad=105372</blockquote>\n\n"
+
+            "<b>Envoyez ici ⬇️📱</b>\n"
+            "@HAH33tito33\n\n"
+
+            "<b>Lien du canal Telegram 👇</b>\n"
+            "https://t.me/+GqKpGbFjOaBjYTQ8\n"
         )
 
     if lang == "ru":
         return (
-            "<b>Обязательно к прочтению 🔴</b>\n\n"
-            "<blockquote>Уважаемый пользователь,\n"
-            "Чтобы достичь надежности до 99 %, выполните следующие шаги без исключений:</blockquote>\n\n"
-            "PREDICTOR SIGNO-BOX\n\n"
-            "1️⃣ Используйте промокод:\n"
-            "<code>PREDBOX2ROBOT</code>\n\n"
-            "2️⃣ Активируйте бонус CASINO+GAMME при регистрации.\n\n"
-            "3️⃣ Регистрируйтесь только по этой ссылке 👇\n"
-            "https://mlbt.cc 👉 <b>/PREDBOX2ROBOT (MELBET)</b>\n\n"
-            f"<blockquote>🇫🇷 <a href=\"{FRENCH_VIDEO_LINK}\">Видео французской версии</a></blockquote>\n"
-            f"<blockquote>🇬🇧 <a href=\"{ENGLISH_VIDEO_LINK}\">Видео английской версии</a></blockquote>\n\n"
-            "4️⃣ Регистрируйтесь только по этой ссылке 👇\n"
-            "http://bit.ly/48PtwTk 👉 <b>(1XCASINO)</b>\n\n"
-            f"<blockquote>🇫🇷 <a href=\"{FRENCH_VIDEO_LINK}\">Видео французской версии</a></blockquote>\n"
-            f"<blockquote>🇸🇦 <a href=\"{ARABIC_VIDEO_LINK}\">Видео арабской версии</a></blockquote>\n\n"
-            "<blockquote>Эти шаги обеспечивают правильную синхронизацию с нашими алгоритмами; "
-            "без них результаты будут частичными, и точность не может быть гарантирована.</blockquote>\n\n"
-            "<blockquote>▶️ Следуйте инструкциям = получите лучшие прогнозы.</blockquote>"
+            "<b>Внимательно прочитайте 🔴</b>\n\n"
+            "<blockquote>Начните играть прямо сейчас с 💸King of Betting🎰!\n"
+            "🎯 Ваш шанс здесь… нажмите и начните играть!\n\n"
+            "Следуйте шагам, чтобы правильно активировать бота ✅</blockquote>\n\n"
+
+            "1️⃣ Зарегистрируйтесь с промокодом:\n"
+            "<code>Gooo33</code>\n\n"
+
+            "2️⃣ Пополните депозит на 300 EGP\n\n"
+
+            "3️⃣ Отправьте скриншот вашего депозита с промокодом 👈 <b>Gooo33</b>\n\n"
+
+            "<b>Выберите платформу:</b> 🔽🔽\n\n"
+
+            "<blockquote>Ссылка регистрации Jupit ❤️\n"
+            "https://promogooo.click/Gooo33</blockquote>\n"
+
+            "<blockquote>Регистрация LuckyBerry 🟡\n"
+            "https://slim.link/Gooo33_REG</blockquote>\n"
+
+            "<blockquote>Регистрация PariPlus ⬛️\n"
+            "https://pari-pulse.com/Go3</blockquote>\n"
+
+            "<blockquote>Регистрация FastBerry 😍\n"
+            "https://fastpaff.top/L?tag=d_4498338m_105372c_&site=4498338&ad=105372</blockquote>\n\n"
+
+            "<b>Отправить сюда ⬇️📱</b>\n"
+            "@HAH33tito33\n\n"
+
+            "<b>Ссылка на Telegram-канал 👇</b>\n"
+            "https://t.me/+GqKpGbFjOaBjYTQ8\n"
         )
 
 
