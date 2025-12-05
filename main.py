@@ -1,11 +1,11 @@
 import time
+import os
 import threading
 import telebot
 from telebot import types
 
 # ================= إعداد البوت =================
-
-BOT_TOKEN = "7622372235:AAEM__l-1tX1xnjcxF4ZmrprCIRubd34DNk"   # ضع التوكن هنا
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 bot = telebot.TeleBot(BOT_TOKEN, parse_mode="HTML")
 
 user_lang = {}          # {chat_id: "ar" / "en" / "fr" / "ru"}
