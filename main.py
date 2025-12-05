@@ -5,7 +5,7 @@ from telebot import types
 
 # ================= إعداد البوت =================
 
-BOT_TOKEN = "8356835797:AAFzkltTODrtCv6QjCjx_HJxnesg45qzSkc"   # ضع التوكن هنا
+BOT_TOKEN = "7622372235:AAFZiFw7zMejH9NLBCFX2TD9BulvRJZiXnU"   # ضع التوكن هنا
 bot = telebot.TeleBot(BOT_TOKEN, parse_mode="HTML")
 
 user_lang = {}          # {chat_id: "ar" / "en" / "fr" / "ru"}
